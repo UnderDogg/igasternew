@@ -1,8 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		{!!Theme::css('theme.css')!!}
-	</head>
+		{!!Theme::css('css/app.css')!!}
+		{!!Theme::css('themes/flatly/css/main.css')!!}
+
+  </head>
 	<body>
 		<h1> Greetings from "T2" theme  </h1>
 		<ul>

@@ -16,3 +16,5 @@
 - app/Http/Kernel => added to protected middleware
 - app/Http/routes => /routes/web.php
 
+## Extra
+``` bower install bootswatch-sass ```

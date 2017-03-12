@@ -1,8 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		{!!Theme::css('theme.css')!!}
-	</head>
+		{!!Theme::css('css/app.css')!!}
+		{!!Theme::css('themes/flatlynw/css/main.css')!!}
+		{!!Theme::css('themes/flatlynw/css/prism.css')!!}
+   </head>
 	<body>
 		<h1> Greetings from "T3" theme  </h1>
 		<ul>

@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		{!!Theme::css('theme.css')!!}
-	</head>
+		{!!Theme::css('css/app.css')!!}
+  </head>
 	<body>
 		<h1> Greetings from "DEFAULT" theme  </h1>
 		<ul>
