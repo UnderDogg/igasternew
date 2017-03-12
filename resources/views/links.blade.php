@@ -7,7 +7,7 @@ Switch to Theme:
 
 
 <ul>
-  <li>This links are defined in 'links.blade.php' which is located in the default theme.</li>
+  <li>These links are defined in 'links.blade.php' which is located in the default theme.</li>
   <li>Since no other theme overides this view it is shared among all themes.</li>
 </ul>
 
