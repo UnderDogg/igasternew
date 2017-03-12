@@ -9,6 +9,27 @@ return [
 
 	'enabled' => true,
 
+  /*
+  |--------------------------------------------------------------------------
+  | File path where themes will be located.
+  | Can be outside default views path EG: resources/themes
+  | Leave it null if you place your themes in the default views folder 
+  | (as defined in config\views.php)
+  |--------------------------------------------------------------------------
+  */
+  
+  'themes_path' => null, // eg: realpath(base_path('resources/themes'))
+  
+  /*
+  |--------------------------------------------------------------------------
+  | Set behavior if an asset is not found in a Theme hierarcy.
+  | Available options: THROW_EXCEPTION | LOG_ERROR | ASSUME_EXISTS | IGNORE
+  |--------------------------------------------------------------------------
+  */
+  
+  'asset_not_found' => 'LOG_ERROR',
+
+
 	/*
 	|--------------------------------------------------------------------------
 	| Set the Active Theme. Can be set at runtime with:
@@ -27,7 +48,7 @@ return [
 	| 		'views-path' 	=> 'path-to-views',    // defaults to: resources/views/theme-name
 	| 		'asset-path' 	=> 'path-to-assets',   // defaults to: public/theme-name
     |
-    |		// you can add your own custom keys and retreive them with Theme::config('key');
+    |		// you can add your own custom keys and retrieve them with Theme::config('key');
 	| 	],
 	|
 	|--------------------------------------------------------------------------
@@ -38,7 +59,7 @@ return [
 		'default' => [
 			'extends'	 	=> null,
 			'views-path' 	=> '',
-			'asset-path' 	=> '',
+      'asset-path' => 'themes/default',
 		],
 
 		// Add your themes here...
@@ -47,6 +68,19 @@ return [
 		't2',
 		't3',
 		
+
+    'flatly' => [
+      'extends' => 'default',
+      'views-path' => 'default',
+      'asset-path' => 'themes/flatly',
+    ],
+
+
+    'darkly' => [
+        'extends'    => null,  // can be ommited
+        'views-path' => null, // defaults to 'public/themes/darkly', can be ommited
+        'asset-path' => 'themes/darkly', // should be explicit defined or will point to 'public/darkly'
+    ],
 
 		/*--------------[ Example Structre ]------------- 
 	
