@@ -8,9 +8,9 @@
 		<ul>
 			<li> This is the "{{Theme::get()}}" theme. </li>
 			<li> This theme shares 'theme.css' but has its own 'img\test.gif' in the theme folder.			
-			<li> This is an example of an image (located at: "{{Theme::url('img\test.gif')}}"): </li>
+			<li> This is an example of an image (located at: Theme::url('img\test.gif')): </li>
 		</ul>
-		<img src={{Theme::url('img\test.gif')}}>
+		<img src="{{Theme::url('img/test.gif')}}">
 
 		@include('links')
 
