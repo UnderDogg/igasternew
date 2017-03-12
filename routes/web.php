@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('setTheme/{themeName}', function($themeName){
+	Session::put('themeName', $themeName);
+   	return Redirect::to('/');
+});
+
+Route::get('/', function() {
+	return View::make('index');
+	return Theme::get();
 });
